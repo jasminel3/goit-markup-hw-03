@@ -195,6 +195,7 @@ a {
 
 .qualities-section {
   display: flex;
+  align-items: flex-start;
 }
 
 .section-sub-heading {
@@ -204,14 +205,16 @@ a {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  justify-content: space-between;
 }
 
-.text-section {
+.text-section p {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-alternate-color);
+  margin-right: 15px;
 }
 
 .sub-heading {
