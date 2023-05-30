@@ -135,6 +135,12 @@ a {
   justify-content: flex-start;
 }
 
+.hero {
+  background-image: url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero-section {
   font-weight: 900;
   font-size: 44px;
@@ -142,13 +148,13 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-color: #2f303a;
-  color: #ffffff;
   padding-top: 120px;
   padding-bottom: 200px;
   padding-left: 100px;
   padding-right: 100px;
   margin-bottom: 30px;
+  color: #fff;
+  background-color: var(--text-alternate-color);
 }
 
 .hero-section button {
@@ -414,4 +420,15 @@ h4 {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 215px;
   padding-bottom: 60px;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons-list .icons {
+  height: 20px;
+  width: 20px;
 }
