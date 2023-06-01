@@ -68,6 +68,34 @@ a {
   justify-content: space-around;
 }
 
+.header-icons-list {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.header-icons-list .envelope-icon svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  color: var(--link-active-color);
+}
+
+.header-icons-list .smartphone-icon svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.header-icons-list .envelope-icon:hover,
+.header-icons-list .envelope-icon:focus {
+  color: var(--link-active-color);
+}
+
+.header-icons-list .smartphone-icon:hover,
+.header-icons-list .smartphone-icon:focus {
+  color: var(--link-active-color);
+}
+
 .global-header .main-navigation ul li + li + li + li {
   margin-left: 385px;
 }
@@ -96,6 +124,11 @@ a {
 }
 
 .global-header .main-navigation .phone-number {
+  text-decoration: none;
+  color: var(--text-alternate-color);
+}
+
+.global-header .main-navigation .mail {
   text-decoration: none;
   color: var(--text-alternate-color);
 }
@@ -295,6 +328,7 @@ a {
   align-self: center;
   margin-left: 51px;
   margin-right: 45px;
+  margin-bottom: 100px;
 }
 
 .skills2 {
@@ -371,6 +405,9 @@ h4 {
   background-color: #2f303a;
   padding-top: 60px;
 }
+.find-us-flex {
+  display: flex;
+}
 
 .logo {
   width: 145px;
@@ -424,11 +461,89 @@ h4 {
 
 .icons-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 10px;
+  margin-top: 16px;
 }
 
 .icons-list .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+}
+
+.icons-list .icons:hover,
+.icons-list .icons:focus {
+  color: #fff;
+  border-radius: 50%;
+  background-color: var(--link-active-color);
+  border-color: var(--link-active-color);
+  cursor: pointer;
+}
+
+.icons-list .icons svg {
   height: 20px;
   width: 20px;
+}
+
+.find-us-section {
+  position: absolute;
+  width: 79px;
+  height: 16px;
+  left: 516px;
+  top: 2754px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: red;
+}
+
+.footer-icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-icons-list .footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+}
+
+.footer-icons-list .footer-icons:hover,
+.footer-icons-list .footer-icons:focus {
+  color: #fff;
+  border-radius: 50%;
+  background-color: var(--link-active-color);
+  border-color: var(--link-active-color);
+  cursor: pointer;
+}
+
+.footer-icons .footer-icons svg {
+  height: 20px;
+  width: 20px;
+}
+
+.regular-customers-section {
+  background-color: #fff;
+}
+
+.regular-customers {
+  position: absolute;
+  width: 328px;
+  height: 42px;
+  left: 637px;
+  top: 2401px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }
